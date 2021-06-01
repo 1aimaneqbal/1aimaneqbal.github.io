@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
-
+import {useEffect, useRef, useState} from 'react'
+import {BrowserRouter as Router, Route} from 'react-router-dom'
+import './styles/styles.scss';
+import Home from './components/main/Home'
+import PhotoShopComponent from './components/ps'
+import IllustratorComponent from './components/ai'
+import Navbar from './components/Nav'
+import PreLoader from './components/PreLoader';
+import Skills from './components/main/Skills';
+import Education from './components/main/Education';
 function App() {
+  // const cursorRef = useRef(null)
+  // const cursorRef2 = useRef(null)
+  // const [cursorLoc, setCursorLoc] = useState([ ])
+  // useEffect(()=>{
+  //   document.addEventListener('mousemove', e =>{
+  //     cursorRef.current.style.top=`${e.pageY - 10}px`
+  //     cursorRef2.current.style.top=`${e.pageY - 10}px`
+  //     cursorRef.current.style.left=`${e.pageX - 10}px`
+  //     cursorRef2.current.style.left=`${e.pageX - 10}px`
+  //   })
+  // }, [])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <PreLoader />
+      <Router>
+        <Navbar />
+        <Route path="/" exact component={Home}/>
+        <Skills />
+        <Education />
+        <Route path="/OtherProjects/Photoshop" exact component={PhotoShopComponent}/>
+        <Route path="/OtherProjects/Illustrator" exact component={IllustratorComponent}/>
+      </Router>
+      {/* <div className="cursor" ref={cursorRef} />
+      <div className="cursor2" ref={cursorRef2} /> */}
+    </>
   );
 }
 

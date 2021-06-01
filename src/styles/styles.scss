@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Lato", sans-serif;
+  height: 100vh;
+  overflow-x: hidden;
+  user-select: none;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(88, 80, 236);
+  border-radius: 8px;
+  border: transparent;
+}
+.cursor {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  position: absolute;
+  border: 1px solid rgb(73, 73, 73);
+  transition-duration: 0.2s;
+  transition-property: transform;
+  pointer-events: none;
+  z-index: 3;
+}
+@keyframes cursorAnim {
+  from {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(0.8);
+  }
+}
+.cursor2 {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  position: absolute;
+  border: 8px solid rgb(0, 0, 0);
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+  animation: cursorAnim 0.5s infinite alternate;
+  pointer-events: none;
+  opacity: 0.5;
+  transition-property: transform;
+  z-index: 3;
+}
+@import "./home";
+@import "./nav";
+@import "./preloader";
+@import "./skills";
+@import "./education";

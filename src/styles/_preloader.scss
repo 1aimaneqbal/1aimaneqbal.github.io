@@ -1,0 +1,87 @@
+.startLogoContainer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+
+  top: -100%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: vanish 0.5s ease-out forwards 5s;
+  background-color: #fff;
+  z-index: 3;
+}
+.box {
+  height: 150px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8rem;
+  position: relative;
+  overflow: hidden;
+}
+.box .LogoOutline {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 3;
+}
+.box .LogoOutline img {
+  height: 100%;
+  width: 100%;
+}
+.box .Logo {
+  height: 100%;
+  width: 100%;
+}
+.box .Logo img {
+  height: 100%;
+  width: 100%;
+}
+.box::before {
+  content: "";
+  position: absolute;
+  width: 125%;
+  height: 125%;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 30%;
+  animation: spin 4s linear forwards;
+}
+.box::after {
+  content: "";
+  position: absolute;
+  width: 125%;
+  height: 125%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 47%;
+  animation: spin 4s linear forwards;
+}
+@keyframes spin {
+  0% {
+    transform: translateY(-10%) rotate(0deg);
+  }
+  40% {
+    transform: translateY(-50%) rotate(200deg);
+  }
+  60% {
+    transform: translateY(-50%) rotate(300deg);
+  }
+  100% {
+    transform: translateY(-100%) rotate(500deg);
+  }
+}
+@keyframes vanish {
+  to {
+    top: -100%;
+    opacity: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .box {
+    height: 200px;
+    width: 200px;
+  }
+}

@@ -1,0 +1,315 @@
+.skillsPage {
+  width: 100%;
+  height: 100vh;
+  h2 {
+    width: 100%;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 1rem 2rem;
+    color: rgb(88, 80, 236);
+  }
+  .skillsLayout {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(8, auto);
+    gap: 0.5rem;
+    grid-template-areas:
+      ". nodejs pos5 . ."
+      "pos3 c_cpp c_cpp expressjs pos2"
+      "git c_cpp c_cpp mysql mongodb"
+      "javascript javascript python reactjs reactjs"
+      "javascript javascript java reactjs reactjs"
+      "css illustrator illustrator html threejs"
+      "pos4 illustrator illustrator adobexd pos1"
+      ". figma photoshop pos6 .";
+    width: 368px;
+    margin: 0 auto;
+    transition: 0.3s;
+    .skill {
+      border-radius: 50%;
+      box-shadow: 0 0 15px rgba(88, 80, 236, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s;
+      position: relative;
+      overflow: hidden;
+      font-weight: bold;
+      background-color: #fff;
+      // color: rgb(88, 80, 236);
+      &:hover {
+        box-shadow: 0 2px 15px rgba(88, 80, 236, 0.9);
+        color: #fff;
+        cursor: pointer;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: linear-gradient(225deg, rgb(88, 80, 236), rgb(9, 9, 131));
+        z-index: -1;
+        transition: 0.3s;
+        opacity: 0;
+      }
+      &:hover::before {
+        opacity: 1;
+      }
+    }
+    .smallskill {
+      height: 64px;
+      width: 64px;
+      font-size: 0.65rem;
+    }
+    .largeskill {
+      height: 144px;
+      width: 144px;
+      font-size: 1.25rem;
+    }
+    .uselessskill {
+      height: 25px;
+      width: 25px;
+    }
+    .nodejsSkill {
+      grid-area: nodejs;
+      animation: float1 10s linear infinite;
+    }
+    .expressjsSkill {
+      grid-area: expressjs;
+      animation: float2 10s linear infinite;
+    }
+    .gitSkill {
+      grid-area: git;
+      animation: float2 10s linear infinite;
+    }
+    .mysqlSkill {
+      grid-area: mysql;
+      animation: float3 10s linear infinite;
+    }
+    .mongodbSkill {
+      grid-area: mongodb;
+      animation: float1 10s linear infinite;
+    }
+    .pythonSkill {
+      grid-area: python;
+      animation: float2 10s linear infinite;
+    }
+    .javaSkill {
+      grid-area: java;
+      animation: float1 10s linear infinite;
+    }
+    .cssSkill {
+      grid-area: css;
+      animation: float3 10s linear infinite;
+    }
+    .htmlSkill {
+      grid-area: html;
+      animation: float3 10s linear infinite;
+    }
+    .photoshopSkill {
+      grid-area: photoshop;
+      animation: float2 10s linear infinite;
+    }
+    .figmaSkill {
+      grid-area: figma;
+      animation: float1 10s linear infinite;
+    }
+    .threejsSkill {
+      grid-area: threejs;
+      animation: float2 10s linear infinite;
+    }
+    .adobexdSkill {
+      grid-area: adobexd;
+      animation: float1 10s linear infinite;
+    }
+    .c_cppSkill {
+      grid-area: c_cpp;
+      animation: float3 10s linear infinite;
+    }
+    .javascriptSkill {
+      grid-area: javascript;
+      animation: float1 10s linear infinite;
+    }
+    .reactjsSkill {
+      grid-area: reactjs;
+      animation: float2 10s linear infinite;
+    }
+    .illustratorSkill {
+      grid-area: illustrator;
+      animation: float4 10s linear infinite;
+    }
+    .pos1 {
+      grid-area: pos1;
+      animation: float3 10s linear infinite;
+    }
+    .pos2 {
+      grid-area: pos2;
+      align-self: end;
+      animation: float4 10s linear infinite;
+    }
+    .pos3 {
+      grid-area: pos3;
+      align-self: end;
+      justify-self: end;
+      animation: float1 10s linear infinite;
+    }
+    .pos4 {
+      grid-area: pos4;
+      justify-self: end;
+      animation: float1 10s linear infinite;
+    }
+    .pos5 {
+      grid-area: pos5;
+      align-self: end;
+      animation: float4s 10s linear infinite;
+    }
+    .pos6 {
+      grid-area: pos6;
+      animation: float1 10s linear infinite;
+    }
+  }
+}
+@keyframes float1 {
+  0% {
+    transform: translateX(0) translateY(-6px);
+  }
+  25% {
+    transform: translateX(-6px) translateY(4px);
+  }
+  50% {
+    transform: translateX(2px) translateY(0);
+  }
+  75% {
+    transform: translateX(6px) translateY(6px);
+  }
+  100% {
+    transform: translateX(0) translateY(-6px);
+  }
+}
+@keyframes float2 {
+  0% {
+    transform: translateX(0) translateY(6px);
+  }
+  25% {
+    transform: translateX(4px) translateY(-6px);
+  }
+  50% {
+    transform: translateX(-2px) translateY(-4px);
+  }
+  75% {
+    transform: translateX(-6px) translateY(2px);
+  }
+  100% {
+    transform: translateX(0) translateY(6px);
+  }
+}
+@keyframes float3 {
+  0% {
+    transform: translateX(0) translateY(2px);
+  }
+  25% {
+    transform: translateX(6px) translateY(-6px);
+  }
+  50% {
+    transform: translateX(-4px) translateY(-1px);
+  }
+  75% {
+    transform: translateX(6px) translateY(3px);
+  }
+  100% {
+    transform: translateX(0) translateY(2px);
+  }
+}
+
+@keyframes float4 {
+  0% {
+    transform: translateX(0) translateY(-6px);
+  }
+  25% {
+    transform: translateX(3px) translateY(-1px);
+  }
+  50% {
+    transform: translateX(-3px) translateY(6px);
+  }
+  75% {
+    transform: translateX(5px) translateY(0px);
+  }
+  100% {
+    transform: translateX(0) translateY(-6px);
+  }
+}
+@media screen and (max-width: 376px) {
+  .skillsPage {
+    h2 {
+      padding: 2rem;
+    }
+    .skillsLayout {
+      transform: scale(0.95);
+    }
+  }
+}
+@media screen and (max-width: 361px) {
+  .skillsPage {
+    h2 {
+      padding: 0.5rem 2rem;
+    }
+    .skillsLayout {
+      transform: scale(0.85);
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .skillsPage {
+    h2 {
+      padding: 2rem 2rem 5rem;
+    }
+    .skillsLayout {
+      width: 584px;
+      height: 368px;
+      display: grid;
+      grid-template-columns: repeat(8, auto);
+      grid-template-rows: repeat(5, auto);
+      gap: 0.5rem;
+      grid-template-areas:
+        ". pos1 nodejs expressjs javascript javascript pos6 ."
+        "java c_cpp c_cpp mysql javascript javascript html pos3"
+        "pos2 c_cpp c_cpp mongodb threejs css reactjs reactjs"
+        ". python git illustrator illustrator adobexd reactjs reactjs"
+        ". . pos4 illustrator illustrator figma photoshop pos5";
+      .htmlSkill {
+        animation: float4 10s linear infinite;
+      }
+      .gitSkill {
+        animation: float4 10s linear infinite;
+      }
+      .pos1 {
+        align-self: end;
+        justify-self: center;
+      }
+      .pos2 {
+        align-self: stretch;
+        justify-self: end;
+      }
+      .pos3 {
+        justify-self: start;
+      }
+      .pos5 {
+        align-self: stretch;
+        animation: float3 10s linear infinite;
+      }
+      .pos6 {
+        align-self: end;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .skillsPage {
+    .skillsLayout {
+      transform: scale(1.2);
+    }
+  }
+}
