@@ -5,7 +5,9 @@ import { UilMoon, UilApps, UilTimes, UilEstate, UilBookOpen, UilUser, UilDesktop
 const Nav = () => {
     const showMenuRef = useRef(null)
     const showHideMenu = () =>{
-        showMenuRef.current.classList.toggle("showNavItems")
+        if(window.innerWidth<=767){
+            showMenuRef.current.classList.toggle("showNavItems")
+        }
     }
     return (
         <nav>
@@ -15,7 +17,7 @@ const Nav = () => {
             <div className="navItems" ref={showMenuRef}>
                 <ul>
                     <li onClick={showHideMenu}>
-                        <a href="#" className="navLink">
+                        <a href="#home" className="navLink">
                             <UilEstate />
                             Home
                         </a>
@@ -27,19 +29,19 @@ const Nav = () => {
                         </a>
                     </li>
                     <li onClick={showHideMenu}>
-                        <a href="#skills" className="navLink">
-                            <UilDesktop />
-                            Skills
-                        </a>
-                    </li>
-                    <li onClick={showHideMenu}>
                         <a href="#education" className="navLink">
                             <UilBookOpen />
                             Education
                         </a>
                     </li>
                     <li onClick={showHideMenu}>
-                        <a href="#" className="navLink">
+                        <a href="#skills" className="navLink">
+                            <UilDesktop />
+                            Skills
+                        </a>
+                    </li>
+                    <li onClick={showHideMenu}>
+                        <a href="#project" className="navLink">
                             <UilSuitcaseAlt />
                             Projects
                         </a>

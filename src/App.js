@@ -8,6 +8,7 @@ import Navbar from './components/Nav'
 import PreLoader from './components/PreLoader';
 import Skills from './components/main/Skills';
 import Education from './components/main/Education';
+import Project from './components/main/Project';
 function App() {
   // const cursorRef = useRef(null)
   // const cursorRef2 = useRef(null)
@@ -26,8 +27,9 @@ function App() {
       <Router>
         <Navbar />
         <Route path="/" exact component={Home}/>
-        <Skills />
         <Education />
+        <Skills />
+        <Project />
         <Route path="/OtherProjects/Photoshop" exact component={PhotoShopComponent}/>
         <Route path="/OtherProjects/Illustrator" exact component={IllustratorComponent}/>
       </Router>

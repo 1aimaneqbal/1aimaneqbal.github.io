@@ -1,5 +1,5 @@
 import React from 'react'
-import EducationCard from './educationdetails/EducationCard'
+import EducationCard from './cards/EducationCard'
 
 const Education = () => {
     const X = [91.6, "X", "1", "2012-2013", "Guru Nanak Higher Sceondary School, Ranchi"]

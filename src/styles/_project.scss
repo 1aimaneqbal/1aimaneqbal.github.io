@@ -1,0 +1,214 @@
+.projectPage {
+  scroll-snap-align: start;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    font-size: 1.8rem;
+    padding: 1rem 2rem 3rem;
+    color: rgb(88, 80, 236);
+  }
+  .projectLayout {
+    align-self: center;
+    width: 391px;
+    transition: 0.3s;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(6, auto);
+    gap: 0.5rem;
+    grid-template-areas:
+      ". proj1 ."
+      "proj2 proj1 proj3"
+      "proj2 proj4 proj3"
+      "proj5 proj4 proj6"
+      "proj5 proj7 proj6"
+      ". proj7 projn";
+    .projectCard {
+      width: 125px;
+      height: 166px;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 0 15px rgba(88, 80, 236, 0.2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem 0.5rem;
+      .projectCardImage {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: inset 0 0 7px rgba(88, 80, 236, 0.2);
+        margin-bottom: 0.5rem;
+        svg {
+          height: 30px;
+          width: 30px;
+          color: rgb(88, 80, 236);
+        }
+      }
+      .projectCardInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        text-align: center;
+        height: calc(100% - 50px);
+        .projectLinks {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          bottom: 0;
+          a {
+            text-decoration: none;
+            font-size: 0.7rem;
+            margin: 0.25rem 0.25rem 0;
+            padding: 0.25rem 0;
+            border-radius: 5px;
+            color: #000;
+            background-color: rgba(88, 80, 236, 0.1);
+          }
+        }
+      }
+    }
+    .proj1 {
+      grid-area: proj1;
+    }
+    .proj2 {
+      grid-area: proj2;
+    }
+    .proj3 {
+      grid-area: proj3;
+    }
+    .proj4 {
+      grid-area: proj4;
+    }
+    .proj5 {
+      grid-area: proj5;
+    }
+    .proj6 {
+      grid-area: proj6;
+    }
+    .proj7 {
+      grid-area: proj7;
+    }
+    .projn {
+      grid-area: projn;
+      width: 125px;
+      height: 75px;
+      a {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: rgb(160, 160, 160);
+        opacity: 0.4;
+        transition: 0.3s;
+        p {
+          margin-top: 0.25rem;
+          font-size: 0.8rem;
+        }
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 376px) {
+  .projectPage {
+    h2 {
+      padding-bottom: 5rem;
+    }
+    .projectLayout {
+      transform: scale(0.9);
+    }
+  }
+}
+@media screen and (max-width: 361px) {
+  .projectPage {
+    h2 {
+      padding-bottom: 1rem;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .projectPage {
+    padding-top: 10vh;
+    h2 {
+      padding: 2rem;
+    }
+    .projectLayout {
+      width: 640px;
+      grid-template-rows: repeat(3, auto);
+      grid-template-columns: repeat(6, auto);
+      grid-template-areas:
+        ". proj1 proj1 proj2 proj2 ."
+        "proj3 proj3 proj4 proj4 proj5 proj5"
+        ". proj6 proj6 proj7 proj7 projn";
+      .projectCard {
+        width: 208px;
+        height: 150px;
+        overflow: hidden;
+        padding: 1rem;
+        .projectCardImage {
+          transition: 0.3s;
+          transform: scale(1.5) translateY(40%);
+          margin-bottom: 0;
+        }
+        .projectCardInfo {
+          transition: 0.3s;
+          transform: translateY(60%);
+          h4 {
+            margin-top: 0.75rem;
+          }
+          .projectLinks {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5rem;
+            a {
+              margin: 0;
+              width: 100%;
+              transition: 0.3s;
+              &:hover {
+                background-color: rgba(88, 80, 236, 0.2);
+              }
+            }
+          }
+        }
+        &:hover {
+          .projectCardImage {
+            transform: none;
+          }
+          .projectCardInfo {
+            transform: translateY(0);
+          }
+        }
+      }
+      .projn {
+        width: 100px;
+        height: 150px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .projectPage {
+    .projectLayout {
+      width: 790px;
+      .projectCard {
+        width: 258px;
+      }
+      .projn {
+        width: 125px;
+      }
+    }
+  }
+}

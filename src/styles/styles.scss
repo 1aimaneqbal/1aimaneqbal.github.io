@@ -6,9 +6,16 @@
 }
 body {
   font-family: "Lato", sans-serif;
+  width: 100%;
   height: 100vh;
   overflow-x: hidden;
   user-select: none;
+  #root {
+    width: 100%;
+    height: 100%;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+  }
 }
 *::-webkit-scrollbar {
   width: 8px;
@@ -59,3 +66,4 @@ body {
 @import "./preloader";
 @import "./skills";
 @import "./education";
+@import "./project";

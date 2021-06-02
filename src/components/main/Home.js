@@ -46,7 +46,7 @@ const Home = () => {
         }
     }
     return (
-        <div className="landingPage">
+        <div className="landingPage" id="home">
             <div className="typeText">
                 <h2>Hi!<br/></h2>
                 <h2>I'm Aiman Eqbal</h2>
