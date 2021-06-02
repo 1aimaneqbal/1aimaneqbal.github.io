@@ -3,7 +3,7 @@ nav {
   height: 3rem;
   position: fixed;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(5px);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -37,10 +37,11 @@ nav {
       gap: 2rem;
       li {
         list-style: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
           text-decoration: none;
           color: rgb(88, 80, 236);
           font-weight: bold;
@@ -49,48 +50,87 @@ nav {
     }
     .navClose {
       position: absolute;
-      bottom: 0.75rem;
+      bottom: 0.65rem;
       right: 2rem;
+      font-size: 1.5rem;
+      color: rgb(88, 80, 236);
     }
   }
   .navItems.showNavItems {
     transform: translateY(0%);
   }
+  .navToggle {
+    display: flex;
+    align-items: center;
+    .themeToggle,
+    .menuToggle {
+      font-size: 1.25rem;
+      color: rgb(88, 80, 236);
+    }
+    .menuToggle {
+      margin-left: 2rem;
+    }
+    .themeToggle {
+      display: none;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
-  // nav {
-  //   bottom: 0;
-  //   height: 3rem;
-  //   padding: 0 1.5rem;
-  // }
-  // nav .navLogo {
-  //   height: 2rem;
-  //   width: 2rem;
-  // }
-  // nav .navItems {
-  //   position: fixed;
-  //   bottom: 0;
-  //   left: 0;
-  //   width: 100%;
-  //   padding: 1.5rem 1.5rem 4rem;
-  //   background-color: rgb(255, 255, 255);
-  //   border-radius: 1.5rem 1.5rem 0 0;
-  //   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
-  //   transition: 0.3s;
-  //   transform: translateY(100%);
-  // }
-  // .navItems.showNavItems {
-  //   transform: translateY(0%);
-  // }
-  // nav .navItems ul {
-  //   display: grid;
-  //   grid-template-columns: repeat(3, 1fr);
-  //   gap: 2rem;
-  // }
-  // nav .navItems .navClose {
-  //   position: absolute;
-  //   bottom: 1rem;
-  //   right: 1.5rem;
-  // }
+  nav {
+    top: 0;
+    height: 10vh;
+    padding: 0 5rem;
+    .navLogo {
+      height: 45px;
+      width: 45px;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .navItems {
+      position: relative;
+      background-color: unset;
+      box-shadow: unset;
+      transform: none;
+      padding: 0;
+      width: unset;
+      margin-left: auto;
+      ul {
+        display: flex;
+        column-gap: 1.5rem;
+        li {
+          a {
+            padding: 0.5rem;
+            color: unset;
+            transition: 0.3s;
+            &:hover {
+              color: rgb(88, 80, 236);
+            }
+            svg {
+              display: none;
+            }
+          }
+        }
+      }
+      .navClose {
+        display: none;
+      }
+    }
+    .navToggle {
+      .themeToggle {
+        margin-left: 1rem;
+        color: unset;
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover {
+          color: rgb(88, 80, 236);
+        }
+      }
+      .menuToggle {
+        display: none;
+      }
+    }
+  }
 }

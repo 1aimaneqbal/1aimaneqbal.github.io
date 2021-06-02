@@ -69,10 +69,11 @@
 @media screen and (min-width: 767px) {
   .landingPage {
     flex-direction: row;
+    padding-top: 10vh;
     .typeText {
       height: 100%;
       width: 100%;
-      padding: 0 0 0 2rem;
+      padding: 2rem 0 0 2rem;
       justify-content: center;
       h2 {
         font-size: 2.2rem;

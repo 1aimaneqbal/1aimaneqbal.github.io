@@ -140,7 +140,11 @@
     }
   }
 }
-
+@media screen and (min-width: 768px) {
+  .educationPage {
+    padding-top: 10vh;
+  }
+}
 @media screen and (min-width: 999px) {
   .educationPage {
     h2 {
@@ -180,6 +184,9 @@
             padding: 2.5rem 0 0 0;
             width: 100%;
             text-align: center;
+            h4 {
+              margin-bottom: 0.75rem;
+            }
           }
         }
       }
