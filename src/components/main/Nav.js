@@ -1,5 +1,5 @@
 import React, {useRef} from 'react'
-import Logo from '../images/Logo.png'
+import Logo from '../../images/Logo.png'
 import {NavLink} from 'react-router-dom'
 import { UilMoon, UilSun, UilApps, UilTimes, UilEstate, UilBookOpen, UilUser, UilDesktop, UilCommentImage, UilSuitcaseAlt } from '@iconscout/react-unicons'
 const Nav = ({theme, setTheme}) => {
@@ -20,7 +20,7 @@ const Nav = ({theme, setTheme}) => {
             <div className={`navItems ${theme ? 'navItemsDark':''}`} ref={showMenuRef}>
                 <ul>
                     <li onClick={showHideMenu}>
-                        <a href="#home" className={`${theme ? 'navLinksDark':''}`}>
+                        <a href="#landing" className={`${theme ? 'navLinksDark':''}`}>
                             <UilEstate />
                             Home
                         </a>
