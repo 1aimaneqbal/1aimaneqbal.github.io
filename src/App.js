@@ -10,6 +10,7 @@ import Skills from './components/main/Skills';
 import Education from './components/main/Education';
 import Project from './components/main/Project';
 function App() {
+  const [theme, setTheme] = useState(false)
   // const cursorRef = useRef(null)
   // const cursorRef2 = useRef(null)
   // const [cursorLoc, setCursorLoc] = useState([ ])
@@ -23,13 +24,13 @@ function App() {
   // }, [])
   return (
     <>
-      <PreLoader />
+      <PreLoader theme={theme} />
       <Router>
-        <Navbar />
-        <Route path="/" exact component={Home}/>
-        <Education />
-        <Skills />
-        <Project />
+        <Navbar theme={theme} setTheme={setTheme}/>
+        <Route path="/" exact ><Home theme={theme}/></Route>
+        <Education theme={theme}/>
+        <Skills theme={theme}/>
+        <Project theme={theme}/>
         <Route path="/OtherProjects/Photoshop" exact component={PhotoShopComponent}/>
         <Route path="/OtherProjects/Illustrator" exact component={IllustratorComponent}/>
       </Router>

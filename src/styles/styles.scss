@@ -15,6 +15,7 @@ body {
     height: 100%;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+    transition: 0.3s;
   }
 }
 *::-webkit-scrollbar {
@@ -67,3 +68,7 @@ body {
 @import "./skills";
 @import "./education";
 @import "./project";
+
+.darkThemeBG {
+  background-color: rgb(50, 50, 50);
+}

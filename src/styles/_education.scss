@@ -116,6 +116,10 @@
             background-color: #fff;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
           }
+          .progressDarkBG {
+            background-color: rgb(61, 61, 61);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+          }
           p {
             position: absolute;
             top: 50%;
@@ -137,6 +141,11 @@
             font-size: 0.8rem;
           }
         }
+      }
+      .educationDarkBG {
+        background-color: rgb(61, 61, 61);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        color: #fff;
       }
     }
   }

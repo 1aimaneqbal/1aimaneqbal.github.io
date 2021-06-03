@@ -50,13 +50,21 @@
         height: 100%;
         top: 0;
         left: 0;
-        background: linear-gradient(225deg, rgb(88, 80, 236), rgb(9, 9, 131));
+        background: linear-gradient(225deg, rgb(88, 80, 236), rgb(88, 80, 236));
         z-index: -1;
         transition: 0.3s;
         opacity: 0;
       }
       &:hover::before {
         opacity: 1;
+      }
+    }
+    .skilldarkBG {
+      background-color: rgb(61, 61, 61);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      color: #fff;
+      &:hover {
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
       }
     }
     .smallskill {

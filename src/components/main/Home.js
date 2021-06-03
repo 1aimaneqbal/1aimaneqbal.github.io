@@ -1,9 +1,8 @@
 import React, {useEffect, useRef} from 'react'
 import LandingAvatar from '../../images/LandingAvatar.png'
-const Home = () => {
+const Home = ({theme}) => {
     const typingTextRef = useRef(null)
     const typingCursorRef = useRef(null)
-    const blah = useRef(null)
     useEffect(() => {
         setTimeout(type, 5700)
     }, [])
@@ -46,13 +45,13 @@ const Home = () => {
         }
     }
     return (
-        <div className="landingPage" id="home">
+        <div className={`landingPage ${theme ? "darkThemeBG" : ''}`} id="home">
             <div className="typeText">
-                <h2>Hi!<br/></h2>
-                <h2>I'm Aiman Eqbal</h2>
-                <p>I like <span className="typingText" ref={typingTextRef}></span><span className="typingCursor stopBlinking" ref={typingCursorRef}>&nbsp;</span></p>
+                <h2 className={`${theme ? 'landingTextDark' : ''}`}>Hi!<br/></h2>
+                <h2 className={`${theme ? 'landingTextDark' : ''}`}>I'm Aiman Eqbal</h2>
+                <p className={`${theme ? 'landingTextDark' : ''}`}>I like <span className="typingText" ref={typingTextRef}></span><span className="typingCursor stopBlinking" ref={typingCursorRef}>&nbsp;</span></p>
             </div>
-            <div className="avatar" ref={blah}>
+            <div className="avatar">
                 <img src={LandingAvatar} />
             </div>
         </div>

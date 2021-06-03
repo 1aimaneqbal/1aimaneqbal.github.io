@@ -27,7 +27,7 @@ nav {
     padding: 1.5rem 1.5rem 4rem;
     background-color: rgb(255, 255, 255);
     border-radius: 1.5rem 1.5rem 0 0;
-    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     transform: translateY(100%);
     z-index: 3;
@@ -44,7 +44,6 @@ nav {
           justify-content: center;
           text-decoration: none;
           color: rgb(88, 80, 236);
-          font-weight: bold;
         }
       }
     }
@@ -55,6 +54,9 @@ nav {
       font-size: 1.5rem;
       color: rgb(88, 80, 236);
     }
+  }
+  .navItemsDark {
+    background-color: rgb(61, 61, 61);
   }
   .navItems.showNavItems {
     transform: translateY(0%);
@@ -74,6 +76,9 @@ nav {
       display: none;
     }
   }
+}
+.navDark {
+  background-color: rgba(61, 61, 61, 0.8);
 }
 
 @media screen and (min-width: 768px) {
@@ -107,10 +112,14 @@ nav {
             transition: 0.3s;
             &:hover {
               color: rgb(88, 80, 236);
+              font-weight: bold;
             }
             svg {
               display: none;
             }
+          }
+          .navLinksDark {
+            color: rgba(255, 255, 255, 0.8);
           }
         }
       }
@@ -121,11 +130,14 @@ nav {
     .navToggle {
       .themeToggle {
         margin-left: 1rem;
-        color: unset;
         transition: 0.3s;
         cursor: pointer;
         &:hover {
           color: rgb(88, 80, 236);
+        }
+        .themeToggleDark {
+          color: rgba(255, 255, 255, 0.8);
+          background-color: red;
         }
       }
       .menuToggle {

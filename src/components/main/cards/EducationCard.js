@@ -1,14 +1,14 @@
 import React from 'react'
 
-const EducationCard = ({Data}) => {
+const EducationCard = ({Data, theme}) => {
     return (
-        <div className="educationCard">
+        <div className={`educationCard ${theme ? "educationDarkBG" : ''}`}>
             <div className="percentage">
                 <svg height="80px" width="80px">
                     <circle r="35px" cx="40px" cy="40px" className="progressBackground"/>
                     <circle r="35px" cx="40px" cy="40px" className={`progress progress${Data[1]}`}/>
                 </svg>
-                <div className="progressShadow"></div>
+                <div className={`progressShadow ${theme ? "progressDarkBG" : ''}`}></div>
                 <p>{Data[0]}</p>
             </div>
             <div className="info">

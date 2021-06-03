@@ -59,6 +59,24 @@
   border-radius: 47%;
   animation: spin 4s linear forwards;
 }
+.boxDark::before {
+  content: "";
+  position: absolute;
+  width: 125%;
+  height: 125%;
+  background-color: rgba(50, 50, 50, 0.6);
+  border-radius: 30%;
+  animation: spin 4s linear forwards;
+}
+.boxDark::after {
+  content: "";
+  position: absolute;
+  width: 125%;
+  height: 125%;
+  background-color: rgb(50, 50, 50);
+  border-radius: 47%;
+  animation: spin 4s linear forwards;
+}
 @keyframes spin {
   0% {
     transform: translateY(-10%) rotate(0deg);
