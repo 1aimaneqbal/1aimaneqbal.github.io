@@ -10,14 +10,25 @@ function App() {
   // const cursorRef = useRef(null)
   // const cursorRef2 = useRef(null)
   // const [cursorLoc, setCursorLoc] = useState([ ])
-  // useEffect(()=>{
+  useEffect(()=>{
   //   document.addEventListener('mousemove', e =>{
   //     cursorRef.current.style.top=`${e.pageY - 10}px`
   //     cursorRef2.current.style.top=`${e.pageY - 10}px`
   //     cursorRef.current.style.left=`${e.pageX - 10}px`
   //     cursorRef2.current.style.left=`${e.pageX - 10}px`
   //   })
-  // }, [])
+  document.onkeydown = e =>{
+    if(e.key==="F12"){
+      return false
+    }
+    if(e.ctrlKey && (e.key==="U" || e.key==="u")){
+      return false
+    }
+  }
+  document.addEventListener('contextmenu', e =>{
+    e.preventDefault()
+  })
+  }, [])
   return (
     <>
       <PreLoader theme={theme} />
