@@ -2,6 +2,7 @@
   scroll-snap-align: start;
   width: 100%;
   height: 100vh;
+  padding: 0 0 4rem 0;
   h2 {
     width: 100%;
     font-size: 1.8rem;
@@ -11,7 +12,9 @@
   }
   .educationLayout {
     width: 100%;
+    height: calc(100% - 70px);
     display: flex;
+    align-items: center;
     padding: 0 2rem;
     .educationProgress {
       width: 3px;
@@ -24,7 +27,7 @@
         height: 9px;
         width: 9px;
         border-radius: 50%;
-        transform: translateX(-3px) translateY(50px);
+        transform: translateX(-3px);
         background-color: rgb(88, 80, 236);
         position: relative;
         &::before {
@@ -48,7 +51,6 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        top: 50px;
         background-color: rgb(160, 160, 160);
       }
       &::after {
@@ -56,7 +58,6 @@
         position: absolute;
         width: 100%;
         height: 95%;
-        top: 50px;
         background-color: rgb(88, 80, 236);
       }
     }
@@ -80,6 +81,7 @@
           width: 80px;
           margin: 0 1rem;
           position: relative;
+          transition: 0s;
           .progressBackground {
             fill: none;
             stroke: rgba(160, 160, 160, 0.2);
@@ -117,7 +119,7 @@
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
           }
           .progressDarkBG {
-            background-color: rgb(61, 61, 61);
+            background-color: rgb(50, 50, 50);
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
           }
           p {
@@ -130,6 +132,7 @@
         }
         .info {
           padding-right: 0.5rem;
+          transition: 0s;
           h3 {
             margin-bottom: 0.1rem;
           }
@@ -143,7 +146,7 @@
         }
       }
       .educationDarkBG {
-        background-color: rgb(61, 61, 61);
+        background-color: rgb(50, 50, 50);
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
         color: #fff;
       }
@@ -154,17 +157,16 @@
   .educationPage {
     h2 {
       font-size: 1.5rem;
-      padding-bottom: 3rem;
     }
     .educationLayout {
-      transform: scale(0.9);
+      transform: scale(0.9) translateY(-2.5%);
     }
   }
 }
 @media screen and (max-width: 361px) {
   .educationPage {
-    h2 {
-      padding-bottom: 0;
+    .educationLayout {
+      transform: scale(0.9) translateY(2.5%);
     }
   }
 }
@@ -175,22 +177,24 @@
 }
 @media screen and (min-width: 999px) {
   .educationPage {
-    h2 {
-      padding: 2rem 2rem 5rem;
-    }
     .educationLayout {
       flex-direction: column-reverse;
       align-items: center;
-      justify-content: flex-end;
-      height: 70%;
+      justify-content: center;
       .educationProgress {
         width: 80%;
         height: 3px;
         flex-direction: row;
+        margin-top: 2rem;
+        .educationProgressStops {
+          transform: translateX(-3px);
+        }
         &::before {
+          top: 0;
           transform: translate(-3px, 3px);
         }
         &::after {
+          top: 0;
           width: 95%;
           transform: translate(-3px, 3.5px);
         }
@@ -204,7 +208,7 @@
           padding: 3rem 1rem;
           flex-direction: column;
           width: 225px;
-          height: 100%;
+          height: 97%;
           .percentage {
             transform: scale(1.25);
           }

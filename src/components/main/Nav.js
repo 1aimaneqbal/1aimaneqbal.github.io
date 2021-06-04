@@ -26,7 +26,7 @@ const Nav = ({theme, setTheme}) => {
                         </a>
                     </li>
                     <li onClick={showHideMenu}>
-                        <a href="#" className={`${theme ? 'navLinksDark':''}`}>
+                        <a href="#about" className={`${theme ? 'navLinksDark':''}`}>
                             <UilUser />
                             About
                         </a>
@@ -50,7 +50,7 @@ const Nav = ({theme, setTheme}) => {
                         </a>
                     </li>
                     <li onClick={showHideMenu}>
-                        <a href="#" className={`${theme ? 'navLinksDark':''}`}>
+                        <a href="#hobbies" className={`${theme ? 'navLinksDark':''}`}>
                             <UilCommentImage />
                             Hobbies
                         </a>

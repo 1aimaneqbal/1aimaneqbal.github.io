@@ -1,0 +1,170 @@
+.hobbiesPage {
+  scroll-snap-align: start;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 4rem 0;
+  h2 {
+    width: 100%;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 1rem 2rem;
+    color: rgb(88, 80, 236);
+  }
+  .aboutLayout {
+    width: 100%;
+    height: calc(100% - 70px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    .hobbiesTitle {
+      text-align: center;
+      padding-bottom: 1rem;
+      transition: 0s;
+    }
+    .hobbiesTitleDark {
+      color: #fff;
+    }
+    .routes {
+      display: flex;
+      justify-content: space-evenly;
+      width: 300px;
+      height: 125px;
+      a {
+        height: 125px;
+        width: 125px;
+        text-decoration: none;
+        .btnRoute {
+          position: relative;
+          height: 100%;
+          width: 100%;
+          border-radius: 50%;
+          box-shadow: 0 0 15px rgba(88, 80, 236, 0.2);
+          color: #000;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 2;
+          overflow: hidden;
+          h5 {
+            text-align: center;
+            transition: 0s;
+          }
+          svg {
+            height: 15px;
+            width: 15px;
+            margin-left: 0.5rem;
+            color: rgb(160, 160, 160);
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            top: -5%;
+            left: -5%;
+            height: 110%;
+            width: 110%;
+            border-radius: 50%;
+            z-index: -1;
+            transition: 0.3s;
+            opacity: 0;
+          }
+          &:hover {
+            color: #fff;
+            &::before {
+              opacity: 1;
+            }
+          }
+        }
+        .btnRouteDark {
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+          color: #fff;
+        }
+        &:nth-child(1) {
+          .btnRoute {
+            &::before {
+              background: linear-gradient(
+                225deg,
+                rgb(38, 20, 2),
+                rgb(143, 54, 4)
+              );
+            }
+          }
+        }
+        &:nth-child(2) {
+          .btnRoute {
+            &::before {
+              background: linear-gradient(
+                225deg,
+                rgb(8, 0, 77),
+                rgb(4, 44, 164)
+              );
+            }
+          }
+        }
+      }
+    }
+    .hobbiesList {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+      .hobbyCard {
+        height: 175px;
+        width: 175px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        img {
+          height: 140px;
+          width: 140px;
+        }
+        .hobbyCardText {
+          transition: 0s;
+          position: absolute;
+          bottom: 0;
+        }
+        .hobbyCardTextDark {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 376px) {
+  .hobbiesPage {
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+}
+@media screen and (max-width: 361px) {
+  .hobbiesPage {
+    .aboutLayout {
+      transform: scale(0.9);
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .hobbiesPage {
+    padding: 10vh 0 0 0;
+    .aboutLayout {
+      height: calc(100% - 70px - 10vh);
+      flex-direction: row;
+      width: 80%;
+      .routes {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1100px) {
+  .hobbiesPage {
+    .aboutLayout {
+      transform: scale(1.2);
+    }
+  }
+}

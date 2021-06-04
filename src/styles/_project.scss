@@ -5,18 +5,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 0 4rem 0;
   h2 {
     font-size: 1.8rem;
-    padding: 1rem 2rem 3rem;
+    padding: 1rem 2rem;
     color: rgb(88, 80, 236);
   }
   .projectLayout {
     align-self: center;
     width: 391px;
+    height: calc(100% - 70px);
+    place-content: center;
     transition: 0.3s;
     display: grid;
     grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(6, auto);
+    grid-template-rows: repeat(6, 75px);
     gap: 0.5rem;
     grid-template-areas:
       ". proj1 ."
@@ -27,7 +30,7 @@
       ". proj7 projn";
     .projectCard {
       width: 125px;
-      height: 166px;
+      height: 158px;
       border-radius: 10px;
       background-color: #fff;
       box-shadow: 0 0 15px rgba(88, 80, 236, 0.2);
@@ -60,6 +63,9 @@
         width: 100%;
         text-align: center;
         height: calc(100% - 50px);
+        .projectCardInfoTitle {
+          transition: 0s;
+        }
         .projectLinks {
           width: 100%;
           display: flex;
@@ -83,7 +89,7 @@
       }
     }
     .projectdarkBG {
-      background-color: rgb(61, 61, 61);
+      background-color: rgb(50, 50, 50);
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
       color: #fff;
     }

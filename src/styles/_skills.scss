@@ -2,6 +2,7 @@
   scroll-snap-align: start;
   width: 100%;
   height: 100vh;
+  padding: 0 0 4rem 0;
   h2 {
     width: 100%;
     font-size: 1.8rem;
@@ -12,7 +13,7 @@
   .skillsLayout {
     display: grid;
     grid-template-columns: repeat(5, auto);
-    grid-template-rows: repeat(8, auto);
+    grid-template-rows: repeat(8, 64px);
     gap: 0.5rem;
     grid-template-areas:
       ". nodejs pos5 . ."
@@ -24,6 +25,8 @@
       "pos4 illustrator illustrator adobexd pos1"
       ". figma photoshop pos6 .";
     width: 368px;
+    height: calc(100% - 70px);
+    place-content: center;
     margin: 0 auto;
     transition: 0.3s;
     .skill {
@@ -37,7 +40,6 @@
       overflow: hidden;
       font-weight: bold;
       background-color: #fff;
-      // color: rgb(88, 80, 236);
       &:hover {
         box-shadow: 0 2px 15px rgba(88, 80, 236, 0.9);
         color: #fff;
@@ -60,7 +62,7 @@
       }
     }
     .skilldarkBG {
-      background-color: rgb(61, 61, 61);
+      background-color: rgb(50, 50, 50);
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
       color: #fff;
       &:hover {
@@ -263,9 +265,6 @@
 }
 @media screen and (max-width: 376px) {
   .skillsPage {
-    h2 {
-      padding: 2rem;
-    }
     .skillsLayout {
       transform: scale(0.95);
     }
@@ -273,9 +272,6 @@
 }
 @media screen and (max-width: 361px) {
   .skillsPage {
-    h2 {
-      padding: 0.5rem 2rem;
-    }
     .skillsLayout {
       transform: scale(0.85);
     }

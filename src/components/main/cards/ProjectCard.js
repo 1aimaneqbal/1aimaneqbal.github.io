@@ -8,7 +8,7 @@ const ProjectCard = ({Icon, Data, theme}) => {
                 <Icon />
             </div>
             <div className="projectCardInfo">
-                <h4>{Data[1]}</h4>
+                <h4 className="projectCardInfoTitle">{Data[1]}</h4>
                 <div className="projectLinks">
                     <a href={Data[2]} target="_blank" className={`${theme ? 'projectLinkDark' : ''}`}>Source Code</a>
                     <a href={Data[3]} target="_blank" className={`${theme ? 'projectLinkDark' : ''}`}>Live Demo</a>

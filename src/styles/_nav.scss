@@ -10,7 +10,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
-  z-index: 2;
+  z-index: 3;
   .navLogo {
     height: 2rem;
     width: 2rem;
@@ -129,7 +129,7 @@ nav {
     }
     .navToggle {
       .themeToggle {
-        margin-left: 1rem;
+        margin-left: 2rem;
         transition: 0.3s;
         cursor: pointer;
         &:hover {

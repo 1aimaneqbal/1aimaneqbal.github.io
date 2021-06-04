@@ -20,7 +20,7 @@ const Skills = ({theme}) => {
     const illustratorSkillRef = useRef(null)
     return (
         <div className={`skillsPage ${theme ? "darkThemeBG" : ''}`} id="skills">
-            <h2>I'm adept in:</h2>
+            <h2>I'm Adept In:</h2>
             <div className="skillsLayout">
                 <div className={`skill smallskill nodejsSkill ${theme ? "skilldarkBG" : ''}`} ref={nodejsSkillRef}>Node.JS</div>
                 <div className={`skill smallskill expressjsSkill ${theme ? "skilldarkBG" : ''}`} ref={expressjsSkillRef}>Express.JS</div>

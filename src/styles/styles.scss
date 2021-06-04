@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  transition: 0.3s;
 }
 body {
   font-family: "Lato", sans-serif;
@@ -62,13 +63,23 @@ body {
   transition-property: transform;
   z-index: 3;
 }
+
+@import "./about";
+@import "./education";
+@import "./hobbies";
 @import "./landing";
 @import "./nav";
 @import "./preloader";
-@import "./skills";
-@import "./education";
 @import "./project";
+@import "./skills";
 
 .darkThemeBG {
   background-color: rgb(50, 50, 50);
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   height: 100%;
+  //   width: 100%;
+  //   z-index: -2;
+  // }
 }
