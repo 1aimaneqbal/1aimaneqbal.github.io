@@ -52,6 +52,7 @@
           h5 {
             text-align: center;
             transition: 0s;
+            font-weight: normal;
           }
           svg {
             height: 15px;
@@ -126,6 +127,7 @@
           transition: 0s;
           position: absolute;
           bottom: 0;
+          font-weight: normal;
         }
         .hobbyCardTextDark {
           color: #fff;
@@ -154,7 +156,7 @@
     .aboutLayout {
       height: calc(100% - 70px - 10vh);
       flex-direction: row;
-      width: 80%;
+      width: 70%;
       .routes {
         margin-top: 1rem;
       }

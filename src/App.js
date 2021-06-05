@@ -6,7 +6,7 @@ import PhotoShopComponent from './components/ps'
 import IllustratorComponent from './components/ai'
 import PreLoader from './components/PreLoader';
 function App() {
-  const [theme, setTheme] = useState(true)
+  const [theme, setTheme] = useState(false)
   // const cursorRef = useRef(null)
   // const cursorRef2 = useRef(null)
   // const [cursorLoc, setCursorLoc] = useState([ ])
