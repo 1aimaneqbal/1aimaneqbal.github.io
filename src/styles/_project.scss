@@ -158,12 +158,10 @@
 }
 @media screen and (min-width: 768px) {
   .projectPage {
-    padding-top: 10vh;
-    h2 {
-      padding: 2rem;
-    }
+    padding: 10vh 0 0;
     .projectLayout {
       width: 640px;
+      height: calc(100% - 70px - 10vh);
       grid-template-rows: repeat(3, auto);
       grid-template-columns: repeat(6, auto);
       grid-template-areas:

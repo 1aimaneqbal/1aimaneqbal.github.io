@@ -279,13 +279,10 @@
 }
 @media screen and (min-width: 768px) {
   .skillsPage {
-    padding-top: 10vh;
-    h2 {
-      padding: 2rem 2rem 5rem;
-    }
+    padding: 10vh 0 0;
     .skillsLayout {
       width: 584px;
-      height: 368px;
+      height: calc(100% - 70px - 10vh);
       display: grid;
       grid-template-columns: repeat(8, auto);
       grid-template-rows: repeat(5, auto);
