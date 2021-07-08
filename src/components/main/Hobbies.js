@@ -10,7 +10,7 @@ import HobbyCard from './cards/HobbyCard'
 const Hobbies = ({theme}) => {
     return (
         <div className={`hobbiesPage ${theme ? "darkThemeBG" : ''}`} id="hobbies">
-            <h2>What I do In Spare Time:</h2>
+            <h2>What I do In Spare Time</h2>
             <div className="aboutLayout">
                 <div className="graphicsLayout">
                     <h3 className={`hobbiesTitle ${theme ? 'hobbiesTitleDark': ''}`}>Graphic Desiging</h3>

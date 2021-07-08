@@ -5,7 +5,7 @@ import CV from "../../assets/AIMAN EQBAL.pdf"
 const About = ({theme}) => {
     return (
         <div className={`aboutPage ${theme ? "darkThemeBG" : ''}`} id="about">
-            <h2>A Little Bit About Me:</h2>
+            <h2>A Little Bit About Me</h2>
             <div className="aboutLayout">
                 <div className="aboutImage">
                     <img src={AboutImage} />
@@ -16,8 +16,6 @@ const About = ({theme}) => {
                         <br />Hard-working, curious, mostly self taught & a quick learner who flourishes under pressure and is eager to learn new technologies.
                         <br />Would love to visit Japan someday. <UilHeartAlt />
                     </p>
-                    {/* <div className="contactLinks">
-                    </div> */}
                     <ul className="contactLinks">
                         <li>
                             <a href="https://facebook.com/1aimaneqbal" target="_blank" className={`contactLink ${theme ? 'contactLinkDark' : ''}`}><UilFacebookF /></a>

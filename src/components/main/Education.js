@@ -8,7 +8,7 @@ const Education = ({theme}) => {
     const MCA = [91.2, "MCA", "0", "2019-2022", "Birla Institute of Technology, Mesra"]
     return (
         <div className={`educationPage ${theme ? "darkThemeBG" : ''}`} id="education">
-            <h2>My Educational History:</h2>
+            <h2>My Educational History</h2>
             <div className="educationLayout">
                 <div className="educationProgress">
                     <div className="educationProgressStops"></div>

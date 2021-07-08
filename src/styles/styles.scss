@@ -20,15 +20,7 @@ body {
   }
 }
 *::-webkit-scrollbar {
-  width: 8px;
-}
-*::-webkit-scrollbar-track {
-  background: transparent;
-}
-*::-webkit-scrollbar-thumb {
-  background-color: rgb(88, 80, 236);
-  border-radius: 8px;
-  border: transparent;
+  width: 0px;
 }
 .cursor {
   height: 20px;

@@ -1,5 +1,5 @@
 import {useEffect, useRef, useState} from 'react'
-import {BrowserRouter as Router, Route} from 'react-router-dom'
+import {HashRouter as Router, Route} from 'react-router-dom'
 import './styles/styles.scss';
 import Home from './components/main/Home'
 import PhotoShopComponent from './components/ps'

@@ -1,6 +1,7 @@
 import React, {useRef} from 'react'
 import Logo from '../../images/Logo.png'
 import {NavLink} from 'react-router-dom'
+import { HashLink as Link } from 'react-router-hash-link';
 import { UilMoon, UilSun, UilApps, UilTimes, UilEstate, UilBookOpen, UilUser, UilDesktop, UilCommentImage, UilSuitcaseAlt } from '@iconscout/react-unicons'
 const Nav = ({theme, setTheme}) => {
     const showMenuRef = useRef(null)
@@ -20,40 +21,40 @@ const Nav = ({theme, setTheme}) => {
             <div className={`navItems ${theme ? 'navItemsDark':''}`} ref={showMenuRef}>
                 <ul>
                     <li onClick={showHideMenu}>
-                        <a href="#landing" className={`${theme ? 'navLinksDark':''}`}>
+                        <Link to="#landing" className={`${theme ? 'navLinksDark':''}`}>
                             <UilEstate />
                             Home
-                        </a>
+                        </Link>
                     </li>
                     <li onClick={showHideMenu}>
-                        <a href="#about" className={`${theme ? 'navLinksDark':''}`}>
+                        <Link to="#about" className={`${theme ? 'navLinksDark':''}`}>
                             <UilUser />
                             About
-                        </a>
+                        </Link>
                     </li>
                     <li onClick={showHideMenu}>
-                        <a href="#education" className={`${theme ? 'navLinksDark':''}`}>
+                        <Link to="#education" className={`${theme ? 'navLinksDark':''}`}>
                             <UilBookOpen />
                             Education
-                        </a>
+                        </Link>
                     </li>
                     <li onClick={showHideMenu}>
-                        <a href="#skills" className={`${theme ? 'navLinksDark':''}`}>
+                        <Link to="#skills" className={`${theme ? 'navLinksDark':''}`}>
                             <UilDesktop />
                             Skills
-                        </a>
+                        </Link>
                     </li>
                     <li onClick={showHideMenu}>
-                        <a href="#project" className={`${theme ? 'navLinksDark':''}`}>
+                        <Link to="#project" className={`${theme ? 'navLinksDark':''}`}>
                             <UilSuitcaseAlt />
                             Projects
-                        </a>
+                        </Link>
                     </li>
                     <li onClick={showHideMenu}>
-                        <a href="#hobbies" className={`${theme ? 'navLinksDark':''}`}>
+                        <Link to="#hobbies" className={`${theme ? 'navLinksDark':''}`}>
                             <UilCommentImage />
                             Hobbies
-                        </a>
+                        </Link>
                     </li>
                 </ul>
                 <div className="navClose" onClick={showHideMenu}>

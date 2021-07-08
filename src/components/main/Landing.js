@@ -5,7 +5,7 @@ const Landing = ({theme}) => {
     const typingTextRef = useRef(null)
     const typingCursorRef = useRef(null)
     useEffect(() => {
-        setTimeout(type, 5700)
+        setTimeout(type, 200)
     }, [typingTextRef, typingCursorRef])
     const textArray = ["Coding.", "Web Designing.", "Photoshopping.", "Creating Vectors.", "Playing Volleyball.", "Playing Badminton.", "eSports."]
     const typingDelay = 100
