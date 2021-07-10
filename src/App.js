@@ -6,7 +6,7 @@ import PhotoShopComponent from './components/ps'
 import IllustratorComponent from './components/ai'
 import PreLoader from './components/PreLoader';
 function App() {
-  const [theme, setTheme] = useState(false)
+  const [theme, setTheme] = useState(getInitialMode())
   useEffect(()=>{
   const thisWhat="security"
   // document.onkeydown = e =>{
@@ -20,7 +20,28 @@ function App() {
   // document.addEventListener('contextmenu', e =>{
   //   e.preventDefault()
   // })
+
   }, [])
+  useEffect(()=>{
+    localStorage.setItem("theme", JSON.stringify(theme))
+  }, [theme])
+  function getInitialMode() {
+    const isReturningUser = "theme" in localStorage;
+    const savedMode = JSON.parse(localStorage.getItem("theme"));
+    const userPrefersDark = getPrefColorScheme();
+    if (isReturningUser) {
+      return savedMode;
+    } else if (userPrefersDark) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  function getPrefColorScheme() {
+    if (!window.matchMedia) return;
+
+    return window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
   return (
     <>
       <PreLoader theme={theme} />
