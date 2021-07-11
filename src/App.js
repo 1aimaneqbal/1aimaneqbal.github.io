@@ -1,9 +1,12 @@
 import {useEffect, useState} from 'react'
 import {HashRouter as Router, Route} from 'react-router-dom'
+import "swiper/swiper.min.css";
+import "swiper/components/effect-coverflow/effect-coverflow.min.css";
+import "swiper/components/pagination/pagination.min.css";
 import './styles/styles.scss';
 import Home from './components/main/Home'
-import PhotoShopComponent from './components/ps'
-import IllustratorComponent from './components/ai'
+import PhotoShopComponent from './components/Ps'
+import IllustratorComponent from './components/Ai'
 import PreLoader from './components/PreLoader';
 function App() {
   const [theme, setTheme] = useState(getInitialMode())

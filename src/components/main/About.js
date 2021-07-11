@@ -21,7 +21,7 @@ const About = ({theme}) => {
                             <a href="https://facebook.com/1aimaneqbal" target="_blank" className={`contactLink ${theme ? 'contactLinkDark' : ''}`}><UilFacebookF /></a>
                         </li>
                         <li>
-                            <a href="https://instagram.com/aiman.eqbal.io/" target="_blank" className={`contactLink ${theme ? 'contactLinkDark' : ''}`}><UilInstagram /></a>
+                            <a href="https://instagram.com/aiman.eqbal/" target="_blank" className={`contactLink ${theme ? 'contactLinkDark' : ''}`}><UilInstagram /></a>
                         </li>
                         <li>
                             <a href="https://github.com/1aimaneqbal" target="_blank" className={`contactLink ${theme ? 'contactLinkDark' : ''}`}><UilGithubAlt /></a>

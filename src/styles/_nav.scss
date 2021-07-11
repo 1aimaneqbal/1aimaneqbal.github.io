@@ -44,6 +44,9 @@ nav {
           justify-content: center;
           text-decoration: none;
           color: rgb(88, 80, 236);
+          svg {
+            margin-bottom: 0.25rem;
+          }
         }
       }
     }
@@ -56,7 +59,7 @@ nav {
     }
   }
   .navItemsDark {
-    background-color: rgb(61, 61, 61);
+    background-color: rgb(50, 50, 50);
   }
   .navItems.showNavItems {
     transform: translateY(0%);

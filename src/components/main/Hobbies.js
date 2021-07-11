@@ -13,7 +13,7 @@ const Hobbies = ({theme}) => {
             <h2>What I do In Spare Time</h2>
             <div className="aboutLayout">
                 <div className="graphicsLayout">
-                    <h3 className={`hobbiesTitle ${theme ? 'hobbiesTitleDark': ''}`}>Graphic Desiging</h3>
+                    <h3 className={`hobbiesTitle ${theme ? 'hobbiesTitleDark': ''}`}>Graphic Designing</h3>
                     <div className="routes">
                         <NavLink to="/Hobbies/Illustrator">
                             <div className={`btnRoute ${theme ? 'btnRouteDark': ''}`}>
