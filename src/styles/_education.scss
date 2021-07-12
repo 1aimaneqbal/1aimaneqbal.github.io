@@ -119,7 +119,7 @@
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
           }
           .progressDarkBG {
-            background-color: rgb(50, 50, 50);
+            background-color: #0f1624;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
           }
           p {
@@ -146,8 +146,8 @@
         }
       }
       .educationDarkBG {
-        background-color: rgb(50, 50, 50);
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        background-color: #0f1624;
+        box-shadow: 0 0 15px rgba($color: #162035, $alpha: 1);
         color: #fff;
       }
     }
@@ -196,7 +196,7 @@
         &::after {
           top: 0;
           width: 95%;
-          transform: translate(-3px, 3.5px);
+          transform: translate(-3px, 3px);
         }
       }
       .educationCards {

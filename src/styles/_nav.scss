@@ -27,7 +27,7 @@ nav {
     padding: 1.5rem 1.5rem 4rem;
     background-color: rgb(255, 255, 255);
     border-radius: 1.5rem 1.5rem 0 0;
-    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 -1px 7px rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     transform: translateY(100%);
     z-index: 3;
@@ -59,7 +59,8 @@ nav {
     }
   }
   .navItemsDark {
-    background-color: rgb(50, 50, 50);
+    background-color: #0f1624;
+    box-shadow: 0 -1px 7px rgba($color: #162035, $alpha: 1);
   }
   .navItems.showNavItems {
     transform: translateY(0%);
@@ -75,13 +76,10 @@ nav {
     .menuToggle {
       margin-left: 2rem;
     }
-    // .themeToggle {
-    //   display: none;
-    // }
   }
 }
 .navDark {
-  background-color: rgba(50, 50, 50, 0.9);
+  background-color: rgba($color: #0f1624, $alpha: 0.9);
 }
 
 @media screen and (min-width: 768px) {

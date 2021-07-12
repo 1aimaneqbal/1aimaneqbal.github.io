@@ -62,8 +62,9 @@
       }
     }
     .skilldarkBG {
-      background-color: rgb(50, 50, 50);
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      background-color: #0f1624;
+      box-shadow: 0 0 15px rgba($color: #162035, $alpha: 0.75);
+      border: 1px solid #1b2842a4;
       color: #fff;
       &:hover {
         box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);

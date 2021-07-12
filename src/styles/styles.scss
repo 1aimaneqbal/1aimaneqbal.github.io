@@ -20,7 +20,15 @@ body {
   }
 }
 *::-webkit-scrollbar {
-  width: 0px;
+  width: 8px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(88, 80, 236);
+  border-radius: 8px;
+  border: transparent;
 }
 .cursor {
   height: 20px;
@@ -67,7 +75,7 @@ body {
 @import "./vectors";
 
 .darkThemeBG {
-  background-color: rgb(50, 50, 50);
+  background-color: #0f1624;
   // &::before {
   //   content: "";
   //   position: absolute;

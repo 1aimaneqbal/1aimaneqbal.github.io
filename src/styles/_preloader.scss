@@ -64,7 +64,7 @@
   position: absolute;
   width: 125%;
   height: 125%;
-  background-color: rgba(50, 50, 50, 0.6);
+  background-color: rgba($color: #0f1624, $alpha: 0.6);
   border-radius: 30%;
   animation: spin 4s linear forwards;
 }
@@ -73,7 +73,7 @@
   position: absolute;
   width: 125%;
   height: 125%;
-  background-color: rgb(50, 50, 50);
+  background-color: #0f1624;
   border-radius: 47%;
   animation: spin 4s linear forwards;
 }

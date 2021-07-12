@@ -27,6 +27,8 @@ function App() {
   }, [])
   useEffect(()=>{
     localStorage.setItem("theme", JSON.stringify(theme))
+    if(theme) document.body.style.backgroundColor = "#0f1624";
+    else document.body.style.backgroundColor = "#fff"
   }, [theme])
   function getInitialMode() {
     const isReturningUser = "theme" in localStorage;
