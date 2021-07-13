@@ -12,7 +12,7 @@ const About = ({theme}) => {
                 </div>
                 <div className="aboutInfo">
                     <h3 className={`aboutInfoHeading ${theme ? 'aboutInfoHeadingDark' : '' }`}>Hey there! My name is Aiman Eqbal</h3>
-                    <p className={`aboutInfoDesc ${theme ? 'aboutInfoDescDark' : '' }`}>I'm a Ranchi based tech enthusiast & a programmer who loves desiging and developement.
+                    <p className={`aboutInfoDesc ${theme ? 'aboutInfoDescDark' : '' }`}>I'm a Ranchi based tech enthusiast & a programmer who loves designing and developement.
                         <br />Hard-working, curious, mostly self taught & a quick learner who flourishes under pressure and is eager to learn new technologies.
                         <br />Would love to visit Japan someday. <UilHeartAlt />
                     </p>
@@ -27,7 +27,7 @@ const About = ({theme}) => {
                             <a href="https://github.com/1aimaneqbal" target="_blank" className={`contactLink ${theme ? 'contactLinkDark' : ''}`}><UilGithubAlt /></a>
                         </li>
                         <li>
-                            <a href="#" target="_blank" className={`contactLink ${theme ? 'contactLinkDark' : ''}`}><UilLinkedinAlt /></a>
+                            <a href="https://linkedin.com/in/aiman-eqbal" target="_blank" className={`contactLink ${theme ? 'contactLinkDark' : ''}`}><UilLinkedinAlt /></a>
                         </li>
                         <li>
                             <a href="mailto:1aimaneqbal@gmail.com" target="_blank" className={`contactLink ${theme ? 'contactLinkDark' : ''}`}><UilEnvelope /></a>
