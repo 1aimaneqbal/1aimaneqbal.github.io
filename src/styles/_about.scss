@@ -80,7 +80,8 @@
           }
         }
         .contactLinkDark {
-          box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2);
+          border: 1px solid #162035;
+          box-shadow: inset 0 0 15px rgba($color: #162035, $alpha: 0.5);
         }
       }
     }

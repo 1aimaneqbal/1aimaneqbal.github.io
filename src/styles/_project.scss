@@ -55,7 +55,8 @@
         }
       }
       .projectCardImageDark {
-        box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.2);
+        border: 1px solid #162035;
+        box-shadow: inset 0 0 7px rgba($color: #162035, $alpha: 1);
       }
       .projectCardInfo {
         display: flex;
