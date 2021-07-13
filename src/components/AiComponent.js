@@ -9,7 +9,7 @@ import portraitsVectorInfo from "../assets/portraitsVectorInfo"
 import miscVectorInfo from "../assets/miscVectorInfo"
 SwiperCore.use([EffectCoverflow]);
 
-const Ai = ({theme, setTheme}) => {
+const AiComponent = ({theme, setTheme}) => {
     const themeToggle = () =>{
         setTheme(!theme)
     }
@@ -112,4 +112,4 @@ const Ai = ({theme, setTheme}) => {
     )
 }
 
-export default Ai
+export default AiComponent

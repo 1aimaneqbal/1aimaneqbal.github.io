@@ -4,14 +4,13 @@ import {NavLink} from 'react-router-dom'
 import { UilMoon, UilSun, UilTimes } from '@iconscout/react-unicons'
 import posters from '../assets/postersData'
 
-const Ps = ({theme, setTheme}) => {
+const PsComponent = ({theme, setTheme}) => {
     const posterData = posters()
     const [show, setShow] = useState(false)
     const [tempImg, setTempImg] = useState('')
     const showImg = (poster) => {
         setTempImg(poster)
         setShow(true)
-        console.warn(poster)
     }
     const themeToggle = () =>{
         setTheme(!theme)
@@ -46,4 +45,4 @@ const Ps = ({theme, setTheme}) => {
     )
 }
 
-export default Ps
+export default PsComponent

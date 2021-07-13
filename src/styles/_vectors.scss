@@ -115,3 +115,10 @@
     }
   }
 }
+@media screen and (max-height: 674px) {
+  .vectorContainer {
+    .vectorGrid {
+      transform: scale(0.9);
+    }
+  }
+}

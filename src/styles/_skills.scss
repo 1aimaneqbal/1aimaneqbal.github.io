@@ -98,170 +98,187 @@
     }
     .nodejsSkill {
       grid-area: nodejs;
-      animation: float1 10s linear infinite;
+      animation: float1 10s linear infinite alternate-reverse;
     }
     .expressjsSkill {
       grid-area: expressjs;
-      animation: float2 10s linear infinite;
+      animation: float2 10s linear infinite alternate-reverse;
     }
     .gitSkill {
       grid-area: git;
-      animation: float2 10s linear infinite;
+      animation: float2 10s linear infinite alternate-reverse;
     }
     .mysqlSkill {
       grid-area: mysql;
-      animation: float3 10s linear infinite;
+      animation: float5 10s linear infinite alternate-reverse;
     }
     .mongodbSkill {
       grid-area: mongodb;
-      animation: float1 10s linear infinite;
+      animation: float1 10s linear infinite alternate-reverse;
     }
     .pythonSkill {
       grid-area: python;
-      animation: float2 10s linear infinite;
+      animation: float2 10s linear infinite alternate-reverse;
     }
     .javaSkill {
       grid-area: java;
-      animation: float1 10s linear infinite;
+      animation: float5 10s linear infinite alternate-reverse;
     }
     .cssSkill {
       grid-area: css;
-      animation: float3 10s linear infinite;
+      animation: float3 10s linear infinite alternate-reverse;
     }
     .htmlSkill {
       grid-area: html;
-      animation: float3 10s linear infinite;
+      animation: float3 10s linear infinite alternate-reverse;
     }
     .photoshopSkill {
       grid-area: photoshop;
-      animation: float2 10s linear infinite;
+      animation: float2 10s linear infinite alternate-reverse;
     }
     .figmaSkill {
       grid-area: figma;
-      animation: float1 10s linear infinite;
+      animation: float1 10s linear infinite alternate-reverse;
     }
     .threejsSkill {
       grid-area: threejs;
-      animation: float2 10s linear infinite;
+      animation: float5 10s linear infinite alternate-reverse;
     }
     .adobexdSkill {
       grid-area: adobexd;
-      animation: float1 10s linear infinite;
+      animation: float1 10s linear infinite alternate-reverse;
     }
     .c_cppSkill {
       grid-area: c_cpp;
-      animation: float3 10s linear infinite;
+      animation: float3 10s linear infinite alternate-reverse;
     }
     .javascriptSkill {
       grid-area: javascript;
-      animation: float1 10s linear infinite;
+      animation: float1 10s linear infinite alternate-reverse;
     }
     .reactjsSkill {
       grid-area: reactjs;
-      animation: float2 10s linear infinite;
+      animation: float2 10s linear infinite alternate-reverse;
     }
     .illustratorSkill {
       grid-area: illustrator;
-      animation: float4 10s linear infinite;
+      animation: float4 10s linear infinite alternate-reverse;
     }
     .pos1 {
       grid-area: pos1;
-      animation: float3 10s linear infinite;
+      animation: float3 10s linear infinite alternate-reverse;
     }
     .pos2 {
       grid-area: pos2;
       align-self: end;
-      animation: float4 10s linear infinite;
+      animation: float4 10s linear infinite alternate-reverse;
     }
     .pos3 {
       grid-area: pos3;
       align-self: end;
       justify-self: end;
-      animation: float1 10s linear infinite;
+      animation: float1 10s linear infinite alternate-reverse;
     }
     .pos4 {
       grid-area: pos4;
       justify-self: end;
-      animation: float1 10s linear infinite;
+      animation: float1 10s linear infinite alternate-reverse;
     }
     .pos5 {
       grid-area: pos5;
       align-self: end;
-      animation: float4s 10s linear infinite;
+      animation: float4s 10s linear infinite alternate-reverse;
     }
     .pos6 {
       grid-area: pos6;
-      animation: float1 10s linear infinite;
+      animation: float1 10s linear infinite alternate-reverse;
     }
   }
 }
 @keyframes float1 {
   0% {
-    transform: translateX(0) translateY(-6px);
+    transform: translateX(-4px) translateY(0);
   }
   25% {
-    transform: translateX(-6px) translateY(4px);
+    transform: translateX(-2px) translateY(4px);
   }
   50% {
-    transform: translateX(2px) translateY(0);
+    transform: translateX(0) translateY(-4px);
   }
   75% {
-    transform: translateX(6px) translateY(6px);
+    transform: translateX(2px) translateY(4px);
   }
   100% {
-    transform: translateX(0) translateY(-6px);
+    transform: translateX(4px) translateY(0);
   }
 }
 @keyframes float2 {
   0% {
-    transform: translateX(0) translateY(6px);
+    transform: translateX(4px) translateY(0);
   }
   25% {
-    transform: translateX(4px) translateY(-6px);
+    transform: translateX(2px) translateY(-4px);
   }
   50% {
-    transform: translateX(-2px) translateY(-4px);
+    transform: translateX(0) translateY(4px);
   }
   75% {
-    transform: translateX(-6px) translateY(2px);
+    transform: translateX(-2px) translateY(-4px);
   }
   100% {
-    transform: translateX(0) translateY(6px);
+    transform: translateX(4px) translateY(0);
   }
 }
 @keyframes float3 {
   0% {
-    transform: translateX(0) translateY(2px);
+    transform: translateX(0) translateY(4px);
   }
   25% {
-    transform: translateX(6px) translateY(-6px);
+    transform: translateX(4px) translateY(2px);
   }
   50% {
-    transform: translateX(-4px) translateY(-1px);
+    transform: translateX(-4px) translateY(0);
   }
   75% {
-    transform: translateX(6px) translateY(3px);
+    transform: translateX(4px) translateY(-2px);
   }
   100% {
-    transform: translateX(0) translateY(2px);
+    transform: translateX(0) translateY(-4px);
   }
 }
 
 @keyframes float4 {
   0% {
-    transform: translateX(0) translateY(-6px);
+    transform: translateX(0) translateY(-4px);
   }
   25% {
-    transform: translateX(3px) translateY(-1px);
+    transform: translateX(-4px) translateY(-2px);
   }
   50% {
-    transform: translateX(-3px) translateY(6px);
+    transform: translateX(4px) translateY(0);
   }
   75% {
-    transform: translateX(5px) translateY(0px);
+    transform: translateX(-4px) translateY(2px);
   }
   100% {
-    transform: translateX(0) translateY(-6px);
+    transform: translateX(0) translateY(4px);
+  }
+}
+@keyframes float5 {
+  0% {
+    transform: translateX(-4px) translateY(4px);
+  }
+  25% {
+    transform: translateX(2px) translateY(-4px);
+  }
+  50% {
+    transform: translateX(4px) translateY(4px);
+  }
+  75% {
+    transform: translateX(-4px) translateY(-4px);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
   }
 }
 @media screen and (max-width: 376px) {
@@ -294,12 +311,6 @@
         "pos2 c_cpp c_cpp mongodb threejs css reactjs reactjs"
         ". python git illustrator illustrator adobexd reactjs reactjs"
         ". . pos4 illustrator illustrator figma photoshop pos5";
-      .htmlSkill {
-        animation: float4 10s linear infinite;
-      }
-      .gitSkill {
-        animation: float4 10s linear infinite;
-      }
       .pos1 {
         align-self: end;
         justify-self: center;
@@ -313,7 +324,6 @@
       }
       .pos5 {
         align-self: stretch;
-        animation: float3 10s linear infinite;
       }
       .pos6 {
         align-self: end;

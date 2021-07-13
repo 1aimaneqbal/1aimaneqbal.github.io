@@ -5,24 +5,26 @@ import "swiper/components/effect-coverflow/effect-coverflow.min.css";
 import "swiper/components/pagination/pagination.min.css";
 import './styles/styles.scss';
 import Home from './components/main/Home'
-import PhotoShopComponent from './components/Ps'
-import IllustratorComponent from './components/Ai'
+import PhotoShopComponent from './components/PsComponent'
+import IllustratorComponent from './components/AiComponent'
 import PreLoader from './components/PreLoader';
 function App() {
   const [theme, setTheme] = useState(getInitialMode())
   useEffect(()=>{
-  const thisWhat="security"
-  // document.onkeydown = e =>{
-  //   if(e.key==="F12"){
-  //     return false
-  //   }
-  //   if(e.ctrlKey && (e.key==="U" || e.key==="u")){
-  //     return false
-  //   }
-  // }
-  // document.addEventListener('contextmenu', e =>{
-  //   e.preventDefault()
-  // })
+  document.onkeydown = e =>{
+    if(e.key==="F12"){
+      alert("Functionality Disabled. Check Github for source.")
+      return false
+    }
+    if(e.ctrlKey && (e.key==="U" || e.key==="u")){
+      alert("Functionality Disabled. Check Github for source.")
+      return false
+    }
+  }
+  document.addEventListener('contextmenu', e =>{
+    alert("Functionality Disabled. Check Github for source.")
+    e.preventDefault()
+  })
 
   }, [])
   useEffect(()=>{
