@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.040ba4b8.chunk.css",
-    "main.js": "/static/js/main.bef0b53f.chunk.js",
-    "main.js.map": "/static/js/main.bef0b53f.chunk.js.map",
+    "main.css": "/static/css/main.32a658b5.chunk.css",
+    "main.js": "/static/js/main.37ac36c3.chunk.js",
+    "main.js.map": "/static/js/main.37ac36c3.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d0605945.js",
     "runtime-main.js.map": "/static/js/runtime-main.d0605945.js.map",
     "static/css/2.1b9efad3.chunk.css": "/static/css/2.1b9efad3.chunk.css",
-    "static/js/2.4155ffba.chunk.js": "/static/js/2.4155ffba.chunk.js",
-    "static/js/2.4155ffba.chunk.js.map": "/static/js/2.4155ffba.chunk.js.map",
+    "static/js/2.05075e4d.chunk.js": "/static/js/2.05075e4d.chunk.js",
+    "static/js/2.05075e4d.chunk.js.map": "/static/js/2.05075e4d.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.1b9efad3.chunk.css.map": "/static/css/2.1b9efad3.chunk.css.map",
-    "static/css/main.040ba4b8.chunk.css.map": "/static/css/main.040ba4b8.chunk.css.map",
-    "static/js/2.4155ffba.chunk.js.LICENSE.txt": "/static/js/2.4155ffba.chunk.js.LICENSE.txt",
+    "static/css/main.32a658b5.chunk.css.map": "/static/css/main.32a658b5.chunk.css.map",
+    "static/js/2.05075e4d.chunk.js.LICENSE.txt": "/static/js/2.05075e4d.chunk.js.LICENSE.txt",
     "static/media/0.942c1ee1.png": "/static/media/0.942c1ee1.png",
     "static/media/0.f5c95cc3.png": "/static/media/0.f5c95cc3.png",
     "static/media/0_Kuroshitsuji.4e8011af.png": "/static/media/0_Kuroshitsuji.4e8011af.png",
@@ -57,8 +57,8 @@
     "static/media/9.56d90858.png": "/static/media/9.56d90858.png",
     "static/media/9.ca0564fe.png": "/static/media/9.ca0564fe.png",
     "static/media/9_Naori.b43d13d9.png": "/static/media/9_Naori.b43d13d9.png",
-    "static/media/AIMAN EQBAL.8a9ead7c.pdf": "/static/media/AIMAN EQBAL.8a9ead7c.pdf",
     "static/media/About.f2f0be62.png": "/static/media/About.f2f0be62.png",
+    "static/media/AimanEqbal_Resume_2024_.dc01ae94.pdf": "/static/media/AimanEqbal_Resume_2024_.dc01ae94.pdf",
     "static/media/Goku.790b95dc.png": "/static/media/Goku.790b95dc.png",
     "static/media/HaiseSasake.07e2d7cc.png": "/static/media/HaiseSasake.07e2d7cc.png",
     "static/media/HobbyAnime.8c270b50.png": "/static/media/HobbyAnime.8c270b50.png",
@@ -82,8 +82,8 @@
   "entrypoints": [
     "static/js/runtime-main.d0605945.js",
     "static/css/2.1b9efad3.chunk.css",
-    "static/js/2.4155ffba.chunk.js",
-    "static/css/main.040ba4b8.chunk.css",
-    "static/js/main.bef0b53f.chunk.js"
+    "static/js/2.05075e4d.chunk.js",
+    "static/css/main.32a658b5.chunk.css",
+    "static/js/main.37ac36c3.chunk.js"
   ]
 }
