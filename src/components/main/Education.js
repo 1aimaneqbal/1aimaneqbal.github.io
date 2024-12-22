@@ -5,7 +5,7 @@ const Education = ({theme}) => {
     const X = [91.6, "X", "1", "2012-2013", "Guru Nanak Higher Sceondary School, Ranchi"]
     const XII = [76.6, "XII", "1", "2014-2015", "Guru Nanak Higher Sceondary School, Ranchi"]
     const BCA = [81.1, "BCA", "0", "2016-2019", "Birla Institute of Technology, Mesra"]
-    const MCA = [91.2, "MCA", "0", "2019-2022", "Birla Institute of Technology, Mesra"]
+    const MCA = [92.7, "MCA", "0", "2019-2022", "Birla Institute of Technology, Mesra"]
     return (
         <div className={`educationPage ${theme ? "darkThemeBG" : ''}`} id="education">
             <h2>My Educational History</h2>

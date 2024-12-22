@@ -1,7 +1,7 @@
 import React from 'react'
 import AboutImage from "../../images/About.png"
 import { UilHeartAlt, UilFacebookF, UilInstagram, UilGithubAlt, UilLinkedinAlt, UilEnvelope, UilDownloadAlt } from '@iconscout/react-unicons'
-import CV from "../../assets/AIMAN EQBAL.pdf"
+import CV from "../../assets/AimanEqbal_Resume_2024_.pdf"
 const About = ({theme}) => {
     return (
         <div className={`aboutPage ${theme ? "darkThemeBG" : ''}`} id="about">
@@ -33,7 +33,7 @@ const About = ({theme}) => {
                             <a href="mailto:1aimaneqbal@gmail.com" target="_blank" className={`contactLink ${theme ? 'contactLinkDark' : ''}`}><UilEnvelope /></a>
                         </li>
                     </ul>
-                    <a download="" href={CV} className="downloadCV">Download CV <UilDownloadAlt /></a>
+                    <a href={CV} className="downloadCV">Download CV <UilDownloadAlt /></a>
                 </div>
             </div>
         </div>
